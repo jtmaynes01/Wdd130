@@ -1,0 +1,34 @@
+body{
+    background-color: #fba6ca;
+}
+
+h1{
+    color: white;
+}
+h1:hover{
+    color: black;
+}
+
+header {
+   border: 1px solid black;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* width: 400px; */
+
+}
+
+p{
+    border: 1px dashed lightblue;
+    color: white;
+    font-size: 14pt;
+    margin: 0 auto;
+    text-align: center;
+    width: 250;
+}
+#list {
+margin: 0 auto;
+width: 375px;
+.center {
+    
+}
+}
