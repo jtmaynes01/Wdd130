@@ -1,3 +1,4 @@
+/* html selectors  */
 body{
     background-color: #fba6ca;
 }
@@ -28,7 +29,9 @@ p{
 #list {
 margin: 0 auto;
 width: 375px;
-.center {
-    
 }
+
+img {
+width: 100px;
+text-align: center;
 }
