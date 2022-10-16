@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    background-color: pink;
+}
+section{
+    border: 1px; solid  black;
+    height: 100px;
+    margin-top: 10px;
+    width: 300px;
+}
+#section1{
+    padding: ;
+}
