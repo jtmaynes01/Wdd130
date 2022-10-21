@@ -7,6 +7,7 @@ grid-template-columns: 1fr 1fr;
 justify-items: center;
 gap: 20px;
 }
+/* add comment */
 .red1 { 
   width: 100%; 
   height: 100px; 
