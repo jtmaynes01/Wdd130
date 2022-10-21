@@ -69,11 +69,11 @@ footer .social img{
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     border-radius: 5px;
 }
 
-.book :hover, .join :hover {
+.book:hover, .join:hover {
     background-color: #013220;
     color: #bdc0ba;
 }
@@ -131,6 +131,10 @@ padding-bottom: 15px;
 }
 #hero-img{
     width: 100%;
+   
+}
+#hero-msg {
+    margin: 30px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
