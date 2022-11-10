@@ -166,6 +166,11 @@ padding-bottom: 15px;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
+.active {
+    background-color: #000080;
+    color: white;
+    border-radius: 25%;
+}
 /* id selectors */
 #background{
     height: 725px;
@@ -252,3 +257,4 @@ align-self: center;
         margin-top: 25px;
     }
 }
+/* float:left for image */
