@@ -1,0 +1,29 @@
+/* html */
+p{
+    font-size: 20px;
+}
+img{
+    width: 400px;
+    
+}
+li{
+    font-size: 25px;
+}
+/* class */
+.home-grid img{
+width: 300px;
+}
+.home-grid p{
+    font-size: 25px;
+
+}
+ .logo{
+        width:150px;   
+    }
+    .sm{
+        width: 50px;
+    }
+/* id */
+#hero-img{
+    width: auto;
+}
