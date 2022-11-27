@@ -1,29 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Arbutus+Slab&display=swap');
 /* html */
+a{
+    font-family: 'Alegreya Sans';
+}
+body{
+    max-width: 1650px;
+    margin: 0 0 0 120px;
+    
+}
+footer{
+    display:grid;
+    grid-template-columns: 15% 22% 25% 30%;
+    
+    background-color: #044bae;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    color: #f36087;
+}
+/* footer section{
+    text-align: center;
+    justify-content: space-around;
+    position: fixed;
+} */
+footer img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+footer section:nth-of-type(1){
+    grid-column:2/3;
+    grid-row: 1/2;
+}
+footer section:nth-of-type(2){
+    grid-column: 3/4;
+    text-align: center;
+}
+footer section:nth-of-type(3){
+    grid-column: 4/5;
+    text-align: center;
+}
+footer .sm{
+    position: relative; left: 22px;
+}
+footer h2{
+   text-align: center;
+    position: relative; left: 24px;
+    color: #fedf5f;
+}
+h2{
+    font-family: 'Arbutus Slab';
+    
+}
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 150px;
+}
 p{
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Alegreya Sans';
 }
 img{
-    width: 400px;
-    
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
 }
 li{
     font-size: 25px;
+    text-align: center;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 10px;
+    /* padding-left: 30px; */
+    
 }
+header{
+    background-color: #044bae;
+    
+}
+nav{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    /* border-radius: 5%; */
+}
+nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 60px;
+    /* margin: 10px; */
+    font-size: 25px;
+    
+}
+nav a:hover {
+    background-color: #f36087;
+    color: #fedf5f;
+    border-radius: 20%;
+    
+}
+
 /* class */
+.active{
+    background-color: #fedf5f;
+    color: #044bae;
+    border-radius: 35%;
+}
+.book {
+    color: #f36087;
+    background-color: #044bae;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 30px;
+    border-radius:10px;
+    font-weight: bold;
+    font-family: 'Arbutus Slab';
+    
+}
+
+.book:hover {
+    background-color: #f36087;
+    color: #044bae
+}
+.button-box {
+    margin-top: 45px;
+    text-align: center;
+}
+.copyright {
+    grid-column:1/4;
+    grid-row: 2/3;
+    padding-left: 20px;
+    margin:0px;
+    color: white;
+
+}
+.description {
+    grid-column: 1/5;
+    /* text-align: center; */
+    text-indent: 50px;
+    padding-bottom: 200px;
+}
+.description h1{
+    color: #f27e0a;
+}
+
+
+.home-grid{
+   
+    display: grid;
+    grid-template: 15% 35% 10% 35% 10% / 30% 5% 30% 5% 30%;
+    /* padding: 20px; */
+    /* margin-bottom: 50px; */
+    /* margin-left: -50px; */
+    /* opacity: 50%; */
+    background-color:  rgba(254,223,95,.6);
+}
+.home-grid h2{
+    margin-top: 0;
+}
 .home-grid img{
-width: 300px;
+    width: 300px;
+    /* margin: 20px; */
+    /* padding:3px; */
+    /* background-color: #fedf5f; */
 }
 .home-grid p{
     font-size: 25px;
-
+    
 }
- .logo{
-        width:150px;   
-    }
-    .sm{
-        width: 50px;
-    }
+.logos{
+    width: 150px;
+    margin: auto;
+    padding-left: 50px;
+    /* padding-bottom: 100px; */
+    padding-top: 0;
+}
+
+.info-yoga{
+    grid-column: 1/2;
+    grid-row: 2/3;
+ text-align: center;   
+ 
+}
+
+.info-cardio{
+    grid-column:3/4;
+    grid-row: 2/3;
+    text-align: center;   
+}
+.info-l-w{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;   
+}
+.info-code, .info-sports, .info-music{
+    grid-row: 4/5;
+    text-align: center;   
+}
+.info-code{
+    grid-column: 1/2;
+}
+.info-sports{
+    grid-column: 3/4;
+    
+}
+.info-music{
+    grid-column: 5/6;
+    
+}
+.info-code img, .info-cardio img, .info-music img{
+/* border: 3px solid #f36087; */
+transition: transform .5s;
+box-shadow: 5px 5px 10px #6f7364;
+object-fit: cover;
+background: #f36087;
+}
+.info-code, .info-cardio, .info-music{
+    color: #044bae;
+}
+.info-yoga img, .info-sports img, .info-l-w img{
+    color: #f36087;
+    /* border: 3px solid #044bae; */
+transition: transform .5s;
+box-shadow: 5px 5px 10px #6f7364;
+object-fit: cover;
+background-color: #044bae;
+}
+.info-yoga, .info-sports, .info-l-w{
+    color: #f36087;
+}
+    .info-code:hover, .info-cardio:hover, .info-music:hover, .info-yoga:hover, .info-sports:hover, .info-l-w:hover{
+    opacity: .6;
+    transform: scale(1.2)
+}
+
+
+.sm{
+    width: 50px;
+}
 /* id */
+#hero{
+    text-align: left;
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: #f27e0a;
+    /* border-radius: 1%; */
+    /* opacity: .5; */
+}
+#hero p{
+    font-size: 33px;
+    line-height: 35px;
+    word-spacing: 5px;
+    margin-top: 0;
+    text-indent: 50px;
+    margin-right: 10px;
+    /* opacity: 1; */
+}
 #hero-img{
-    width: auto;
+    float: left;
+    width: 67%;
+    padding-right:30px;
+    border-radius: 5%;
+    margin-top: 35px;
+    /* opacity: 1; */
+}
+
+.home-title{
+    opacity: 1;
+    padding-top: 20px;
+    text-align: center;
+    color: #fedf5f;
+    font-family: 'Arbutus Slab';
+    margin-top: 0px;
+    font-size: 30px;
+    text-align: center;
 }
