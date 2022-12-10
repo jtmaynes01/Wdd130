@@ -136,6 +136,7 @@ nav a:hover {
     padding-left: 20px;
     margin:0px;
     color: white;
+    font-size: 20px;
 
 }
 .description {
@@ -185,7 +186,7 @@ nav a:hover {
 .logos{
     width: 150px;
     margin: auto;
-    padding-left: 50px;
+    padding-left: 30px;
     /* padding-bottom: 100px; */
     padding-top: 0;
 }
@@ -323,6 +324,110 @@ footer .sm {
     padding: 10px;
     /* margin: 10px; */
 }
+.ing {
+    grid-column: 1/2;
+/* justify-self: left;
+align-self:center; */
+    margin-left: 10px;
+
+}
+.ing ul{
+    padding-left: 0%;
+}
+section.ing:nth-of-type(1), section.r-img:nth-of-type(2), section.directions:nth-of-type(3){
+    grid-row: 2/3;
+}
+
+section.ing:nth-of-type(4){
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+section.r-img:nth-of-type(5){
+    grid-row: 4/5;
+    grid-column: 2/3;
+} 
+
+section.directions:nth-of-type(6){
+    grid-row: 4/5;  
+}
+section.ing:nth-of-type(7), section.r-img:nth-of-type(8), section.directions:nth-of-type(9){
+    grid-row: 6/7;  
+}
+section.r-img:nth-of-type(8){
+    position: relative; bottom: 90px;
+}
+.ing:nth-of-type(10), .r-img:nth-of-type(11), .directions:nth-of-type(12){
+    grid-row: 8/9;  
+   /* position: relative;top: 500px; */
+}
+
+.r-img{
+    justify-self:center;
+/* align-self: center; */
+text-align: center;
+margin-top: 100px;
+margin-bottom: 100px;
+grid-column: 2/3;
+position: relative;bottom: 50px;
+}
+.r-img:hover{
+    opacity: .9;
+    transform: scale(1.2)
+}
+.r-img h2:hover{
+    color: #f27e0a;
+
+}
+.r-img img{
+    height: 350px;
+    width: 450px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+.r-img h2{
+    font-size: 35px;
+    color: white;
+}
+.rec-title{
+    text-align: center;
+    /* position: relative;right: 40px; */
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: 30px;
+    color: #f27e0a;
+    font-size: 35px;
+    font-family: 'Arbutus Slab';
+}
+#rec-grid h1::selection{
+color: #f36087;
+}
+
+.rec-foot{
+    /* margin-top: -1000px; */
+}
+.directions {
+    grid-column: 3/4;
+    text-align: center;
+    margin-right: 20px;
+    /* justify-content: center;
+    align-content: center; */
+    /* margin-top: 100px; */
+    /* justify-self: center;
+    align-self:center; */
+}
+.directions li{
+    list-style-type: numbers;
+    /* font-size: 30px; */
+}
+
+.scroll{
+    text-align: center;
+    height:40%;
+    width:100%;
+    border:2px solid #f36087;
+    overflow: auto;
+    margin-top: 200px;
+}
 /* id */
 #hero{
     text-align: left;
@@ -360,9 +465,9 @@ footer .sm {
     color: #044bae;
 }
 #mat-grid h2{
-text-align: center;
-color: #f27e0a;
-
+    text-align: center;
+    color: #f27e0a;
+    
 }
 #mat-grid img {
     height: 300px;
@@ -378,17 +483,42 @@ color: #f27e0a;
     padding: 0 40px 30px 40px;
 }
 #mat-grid .sm{
-/* object-fit: cover; */
-height: 35px;
-width: 35px;
-/* position: relative; bottom: 16px; */
-background-color: unset;
-border: none;
-padding: 5px;
-position: relative; top: 13px;
-position: relative; right: 436px;
+    /* object-fit: cover; */
+    height: 35px;
+    width: 35px;
+    /* position: relative; bottom: 16px; */
+    background-color: unset;
+    border: none;
+    padding: 5px;
+    position: relative; top: 13px;
+    position: relative; right: 436px;
 }
 #mat-grid .sm:hover{
     opacity: .6;
     transform: scale(1.2)
+}
+#rec-grid{
+    display: grid;
+    grid-template: 3% 15% 5% 15% 5% 15% 5% 15%/30% 35% 35%;
+background-color: rgba(5,76,175,.6);
+}
+#rec-grid h4{
+    font-size: 30px;
+    text-align: center;
+    color: #fedf5f;
+    font-family: 'Arbutus Slab';
+}
+/* #rec-grid h4:active{
+    
+    color: #f36087;
+} */
+#rec-grid h4:hover{
+    
+    color: #f36087;
+}
+#rec-grid li{
+    font-size: 30px;
+    font-family: 'Alegreya Sans';
+    margin: 0;
+    color: white;
 }
