@@ -353,7 +353,7 @@ section.directions:nth-of-type(6){
 section.ing:nth-of-type(7), section.r-img:nth-of-type(8), section.directions:nth-of-type(9){
     grid-row: 6/7;  
 }
-section.r-img:nth-of-type(8){
+section.r-img:nth-of-type(11){
     position: relative; bottom: 90px;
 }
 .ing:nth-of-type(10), .r-img:nth-of-type(11), .directions:nth-of-type(12){
@@ -383,6 +383,10 @@ position: relative;bottom: 50px;
     width: 450px;
     border-radius: 5%;
     object-fit: cover;
+    transition: transform .5s;
+    object-fit: cover;
+    background: #f27e0a;
+
 }
 .r-img h2{
     font-size: 35px;
